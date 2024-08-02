@@ -10,4 +10,10 @@ public class FileNode {
     public File getFile() {
         return file;
     }
+
+    @Override
+    public String toString() {
+        return file.getName().isEmpty() ? file.getPath() : file.getName();
+    }
+
 }
