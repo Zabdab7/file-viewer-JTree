@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32c5a644-9a59-41a1-a244-c30bad00bda8" name="Changes" comment="Renamed Frame class to BaseFrame">
-      <change afterPath="$PROJECT_DIR$/src/DetailsFrame.java" afterDir="false" />
+    <list default="true" id="32c5a644-9a59-41a1-a244-c30bad00bda8" name="Changes" comment="Added DetailsFrame">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DetailsFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DetailsFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Coding Projects/Java Projects/file-viewer-JTree/src/Main.java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CodingProjects/JavaProjects/file-viewer-JTree&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;D:/Coding Projects/Java Projects/file-viewer-JTree/src/Main.java&quot;
   }
 }</component>
@@ -131,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722625125986</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added DetailsFrame">
+      <option name="closed" value="true" />
+      <created>1722627030148</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722627030148</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -139,7 +146,8 @@
     <MESSAGE value="Test JTree with File class" />
     <MESSAGE value="Completed" />
     <MESSAGE value="Renamed Frame class to BaseFrame" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed Frame class to BaseFrame" />
+    <MESSAGE value="Added DetailsFrame" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added DetailsFrame" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/file_viewer_JTree$Main.ic" NAME="Main Coverage Results" MODIFIED="1722444166189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

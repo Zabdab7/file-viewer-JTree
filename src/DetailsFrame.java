@@ -1,6 +1,7 @@
 import javax.swing.*;
+import java.awt.*;
 import java.io.File;
-import java.awt.Dimension;
+import javax.swing.border.EmptyBorder;
 
 public class DetailsFrame extends JFrame {
 
@@ -44,6 +45,9 @@ public class DetailsFrame extends JFrame {
 
         this.setMinimumSize(new Dimension(300, 450));
         this.setMaximumSize(new Dimension(400, 550));
+
+        EmptyBorder emptyBorder = new EmptyBorder(10, 10, 10, 10);
+        this.getRootPane().setBorder(emptyBorder);
 
         this.setResizable(true);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
