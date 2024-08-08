@@ -10,6 +10,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
+import java.io.IOException;
 
 public class FileTree extends JTree {
 
@@ -79,7 +80,7 @@ public class FileTree extends JTree {
         // Open a frame to display details only if it has no children
         detailsMenuItem.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                if(node.getFile().listFiles() == null) {
+                if(node.isFolder()) {
                     DetailsFrame df = new DetailsFrame(node);
                 }
             }
@@ -87,31 +88,21 @@ public class FileTree extends JTree {
 
         JMenu openWithMenu = new JMenu("2. Open With");
 
-        openWithMenu.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                System.out.println("openWithMenuItem pressed");
-            }
-        });
-
-
-        openWithMenu.add(new JMenuItem("Google") {{
-            addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    System.out.println("Google pressed");
-                }
-            });
-        }});
-
         openWithMenu.add(new JMenuItem("Notepad") {{
             addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    System.out.println("Notepad pressed");
+                    if(node.isFolder()) {
+                        ProcessBuilder pb = new ProcessBuilder("Notepad.exe", node.getFile().getPath());
+                        try {
+                            pb.start();
+                        } catch (IOException ex) {
+                            throw new RuntimeException(ex);
+                        }
+                    }
                 }
             });
         }});
-
 
         popupMenu.add(detailsMenuItem);
         popupMenu.add(openWithMenu);

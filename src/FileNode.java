@@ -16,4 +16,8 @@ public class FileNode {
         return file.getName().isEmpty() ? file.getPath() : file.getName();
     }
 
+    public boolean isFolder() {
+        return this.file.listFiles() == null;
+    }
+
 }
