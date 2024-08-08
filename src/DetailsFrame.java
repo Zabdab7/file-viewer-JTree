@@ -1,7 +1,5 @@
 import javax.swing.*;
-import java.awt.*;
 import java.io.File;
-import javax.swing.border.EmptyBorder;
 
 public class DetailsFrame extends JFrame {
 
@@ -41,17 +39,10 @@ public class DetailsFrame extends JFrame {
     }
 
     private void configure() {
-        this.setSize(300, 400);
-
-        this.setMinimumSize(new Dimension(300, 450));
-        this.setMaximumSize(new Dimension(400, 550));
-
-        EmptyBorder emptyBorder = new EmptyBorder(10, 10, 10, 10);
-        this.getRootPane().setBorder(emptyBorder);
-
-        this.setResizable(true);
-        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        this.setResizable(false);
         this.setVisible(true);
+        this.setSize(300, 400);
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
 }
